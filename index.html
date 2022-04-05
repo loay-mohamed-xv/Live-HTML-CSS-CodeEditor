@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>LiveCodeEditor</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h3 style="text-align: center;">Code..</h3>
+        <div style="display: flex;">
+            <style id="style"></style>
+            <textarea style="flex: 1; height: 250px;" placeholder="HTML.." onkeyup="compileHTML(this)"></textarea>
+            <textarea style="flex: 1; height: 250px;" placeholder="CSS" onkeyup="compileCSS(this)"></textarea>
+        </div>
+        <h3 style="text-align: center;">Result..</h3>
+        <hr>
+        <div id="output"></div>
+    </body>
+</html>
